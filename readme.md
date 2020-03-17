@@ -1,7 +1,7 @@
 # Willa
 
-1. npm i
-2. gulp
+> git clone https://github.com/Hubytskyi/ws-Willa
 
-# Preview
-https://hubytskyi.github.io/ws-Willa/app/index.html
+1. Clone or [Download](https://github.com/Hubytskyi/ws-Willa.zip) OptimizedHTML 5 from GitHub
+2. Install Node Modules: npm i
+3. Run: gulp
