@@ -1,9 +1,8 @@
 .header
-	height: 100vh
 	.container
 		height: 100%
 		.header__top-line
-			height: 10%
+			margin-bottom: 136px
 			display: flex
 			align-items: center
 		.header__logo
@@ -20,27 +19,28 @@
 		.header__about
 			display: flex
 			align-items: center
-			height: 90%
 			.header__about_img
 				picture
 					position: relative
 					img
 						max-width: 100%
 						z-index: 3
-			.header__about_text
-				position: relative
-			.header__about_circle
-				z-index: -1
+						// max-height: 701px
 				&::after
 					content: ''
 					background: $accent
-					width: 340px
-					height: 340px
+					width: 416px
+					height: 416px
 					border-radius: 100%
 					position: absolute
 					right: 0
 					top: 50%
 					transform: translateY(-50%)
+					z-index: -1
+			.header__about_text
+				position: relative
+				h1
+					min-width: 640px
 
 .header__menu
 	.item__skew-hover
