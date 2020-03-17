@@ -1,2 +1,48 @@
-header
-	max-width: 700px
+.header
+	height: 100vh
+	.container
+		height: 100%
+		.header__top-line
+			height: 10%
+			display: flex
+			align-items: center
+		.header__logo
+			picture
+				img
+					max-height: 93px
+		.header__menu
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.menu__item_active
+				a
+					color: $bluecolor
+		.header__about
+			display: flex
+			align-items: center
+			height: 90%
+			.header__about_img
+				picture
+					position: relative
+					img
+						max-width: 100%
+						z-index: 3
+			.header__about_text
+				position: relative
+			.header__about_circle
+				z-index: -1
+				&::after
+					content: ''
+					background: $accent
+					width: 340px
+					height: 340px
+					border-radius: 100%
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+
+.header__menu
+	.item__skew-hover
+		&::after
+			left: 8px

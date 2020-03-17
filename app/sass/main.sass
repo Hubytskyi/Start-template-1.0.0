@@ -4,7 +4,75 @@
 @import 0-base/buttons.sass
 
 @import 1-section/header.sass
+@import 1-section/bio.sass
+@import 1-section/brands.sass
+@import 1-section/latestMedia.sass
+@import 1-section/footer.sass
 
 // CUSTOM USER STYLES
 
+.circle
+	text-align: center
+	text-transform: uppercase
+	svg
+		transition: 0.3s
+		&:hover
+			transform: scale(.8)
+		textPath
+			font-family: fahkwangbold
+			fill: $bluecolor
+			font-size: 8px
 
+.go-to
+	margin-top: 154px
+	display: flex
+	justify-content: flex-end
+	padding-right: 61px
+	.button__circle
+		font-size: 24px
+		position: relative
+		text-align: right
+		transition: .3s
+		&:hover
+			color: $bluecolor
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			transform: translateT(-50%)
+			border: 1px solid $bluecolor
+			border-radius: 100%
+			width: 257px
+			height: 257px
+
+.click-here
+	position: absolute
+	top: 300px
+	letter-spacing: 5px
+	color: $bluecolor
+	font-size: 15px/23px
+	text-transform: uppercase
+	opacity: .5
+	transition: 0.3s
+	&:hover
+		letter-spacing: 9.15px
+		opacity: 1
+
+.item__skew-hover
+	position: relative
+	transition: 0.3s
+	&::after
+		content: ''
+		background: $bluecolor
+		position: absolute
+		bottom: -8px
+		width: 1px
+		height: 1px
+		transition: 0.3s
+		transform: skewY(-45deg)
+		transform-origin: bottom left 
+	&:hover:after
+		width: 40px
+		

@@ -1,0 +1,44 @@
+.bio
+	.bio__container
+		position: relative
+		top: -84px
+		margin-bottom: -84px
+		.bio__img
+			position: relative
+			z-index: -1
+			img
+				z-index: -1
+				width: 100%
+			&::before
+				content: ''
+				position: absolute
+				background: $bluecolor
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				opacity: 0.5
+
+.bio__container_padding
+	padding-left: 0
+	.row
+		display: flex
+		align-items: center
+		h4
+			color: $bluecolor
+			letter-spacing: 7px
+			margin-bottom: 72px
+			font-size: 18px
+			text-transform: uppercase
+		p
+			font-size: 20px
+			line-height: 30px
+
+.bio__text
+	.item__skew-hover
+		&::after
+			right: 180px
+			bottom: -30px
+		&:hover:after
+			width: 100px
+			right: 90px
