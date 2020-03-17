@@ -1,0 +1,24 @@
+.welcome
+	.welcome__about
+		display: flex
+		align-items: center
+		.welcome__about_img
+			picture
+				position: relative
+				img
+					max-width: 65%
+			&::after
+				content: ''
+				background: $accent
+				width: 400px
+				height: 400px
+				border-radius: 100%
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				z-index: -1
+		.welcome__about_text
+			position: relative
+			h1
+				max-width: 640px

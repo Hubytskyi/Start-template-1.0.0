@@ -1,8 +1,8 @@
 .header
+	margin-bottom: 68px
 	.container
 		height: 100%
 		.header__top-line
-			margin-bottom: 136px
 			display: flex
 			align-items: center
 		.header__logo
@@ -16,31 +16,6 @@
 			.menu__item_active
 				a
 					color: $bluecolor
-		.header__about
-			display: flex
-			align-items: center
-			.header__about_img
-				picture
-					position: relative
-					img
-						max-width: 100%
-						z-index: 3
-						// max-height: 701px
-				&::after
-					content: ''
-					background: $accent
-					width: 416px
-					height: 416px
-					border-radius: 100%
-					position: absolute
-					right: 0
-					top: 50%
-					transform: translateY(-50%)
-					z-index: -1
-			.header__about_text
-				position: relative
-				h1
-					max-width: 640px
 
 .header__menu
 	.item__skew-hover
