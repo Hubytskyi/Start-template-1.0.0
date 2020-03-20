@@ -1,0 +1,25 @@
+.welcome
+	margin-top: 68px
+	&__about
+		display: flex
+		align-items: center
+		&_img
+			picture
+				position: relative
+				img
+					max-height: 70vh
+			&::after
+				content: ''
+				background: $accent
+				width: 50vh
+				height: 50vh
+				border-radius: 100%
+				position: absolute
+				right: 10%
+				top: 50%
+				transform: translateY(-50%)
+				z-index: -1
+		&_text
+			position: relative
+			h1
+				max-width: 640px

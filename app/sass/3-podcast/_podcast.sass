@@ -1,0 +1,72 @@
+.podcast
+	font-family: gothambold
+	height: 87vh
+	display: flex
+	align-items: center
+	background: $bluecolor
+	color: #fff
+	margin-top: 29px
+	position: relative
+	z-index: -1
+	&__title
+		h1
+			font-family: gothambold
+			font-size: 12.6vh
+			max-width: 660px
+			line-height: 15.5vh
+			margin-bottom: 0
+	&::after
+		content: ''
+		background: $accent
+		width: 40vh
+		height: 40vh
+		border-radius: 100%
+		position: absolute
+		left: 28vw
+		top: 16vh
+		z-index: -1
+	&__subtitle
+			span
+				font-size: 6.2vh
+				line-height: 7.5vh
+				color: #FFB2B2
+	&__right-block
+		position: absolute
+		height: 87vh
+		width: 100%
+		top: 0
+		&_list
+			max-height: 100%
+			overflow: hidden
+			position: absolute
+			right: -8vw
+			li
+				font-size: 7vh
+				line-height: 0.8em
+				text-shadow: 1px 1px 1px #FFB2B2, 0 1px 1px #FFB2B2, -1px 0 1px #FFB2B2, 0 -1px 1px #FFB2B2
+				color: $bluecolor
+				font-family: gothammedium
+			.podcast__item-second,
+			.podcast__item-first
+				color: #FFB2B2
+
+.podcast__go-to.go-to
+	position: absolute
+	left: 50%
+	bottom: 15vh
+	z-index: 20
+	transform: translateX(-50%)
+	.button__circle
+		color: #fff
+		&:hover
+			color: #fff
+		&::after
+			border-color: #fff
+.podcast__go-to.item__skew-hover
+	&::after
+		right: 150px
+		bottom: -30px
+		background: #fff
+	&:hover:after
+		width: 100px
+		right: 75px

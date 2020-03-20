@@ -1,0 +1,22 @@
+.header
+	.container
+		height: 100%
+		.header__top-line
+			display: flex
+			align-items: center
+		.header__logo
+			picture
+				img
+					height: 10vh
+		.header__menu
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.menu__item_active
+				a
+					color: $bluecolor
+
+.header__menu
+	.item__skew-hover
+		&::after
+			left: 8px

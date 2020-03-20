@@ -3,18 +3,26 @@
 @import 0-base/404.sass
 @import 0-base/buttons.sass
 
-@import 1-section/header.sass
-@import 1-section/welcome.sass
-@import 1-section/bio.sass
-@import 1-section/brands.sass
-@import 1-section/latestMedia.sass
-@import 1-section/footer.sass
+@import header.sass
+@import footer.sass
+
+@import 1-home/welcome.sass
+@import 1-home/bio.sass
+@import 1-home/brands.sass
+@import 1-home/latestMedia.sass
+
+@import 2-about/bio.sass
+
+@import 3-podcast/podcast.sass
+@import 3-podcast/podcastItems.sass
+@import 3-podcast/podcastDescription.sass
+@import 3-podcast/podcastBloks.sass
 
 // CUSTOM USER STYLES
 
-@media screen and (min-width: 1367px)
-	.container
-		max-width: 1616px
+// @media screen and (min-width: 1367px)
+.container
+	max-width: 90vw
 
 .circle
 	text-align: center
@@ -29,10 +37,10 @@
 .go-to
 	margin-top: 154px
 	display: flex
-	justify-content: flex-end
+	justify-content: center
 	padding-right: 61px
 	.button__circle
-		font-size: 24px
+		font-size: 2.6vh
 		position: relative
 		text-align: right
 		transition: .3s
@@ -44,11 +52,10 @@
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
-			transform: translateT(-50%)
 			border: 1px solid $bluecolor
 			border-radius: 100%
-			width: 257px
-			height: 257px
+			width: 27vh
+			height: 27vh
 
 .click-here
 	position: absolute
