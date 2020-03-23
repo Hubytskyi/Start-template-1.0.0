@@ -20,12 +20,13 @@
 
 // CUSTOM USER STYLES
 
-// @media screen and (min-width: 1367px)
 .container
 	max-width: 90vw
 
 .circle
 	text-align: center
+	position: relative
+	z-index: 999
 	text-transform: uppercase
 	svg
 		transition: 0.3s
@@ -34,11 +35,24 @@
 			fill: $bluecolor
 			font-size: 8px
 
+.click-here
+	position: absolute
+	top: 32vh
+	letter-spacing: 5px
+	color: $bluecolor
+	font-size: 15px/23px
+	text-transform: uppercase
+	opacity: .5
+	transition: 0.3s
+	&:hover
+		letter-spacing: 9.15px
+		opacity: 1
+		color: $bluecolor
+
 .go-to
 	margin-top: 154px
 	display: flex
 	justify-content: center
-	padding-right: 61px
 	.button__circle
 		font-size: 2.6vh
 		position: relative
@@ -57,20 +71,6 @@
 			width: 27vh
 			height: 27vh
 
-.click-here
-	position: absolute
-	top: 300px
-	letter-spacing: 5px
-	color: $bluecolor
-	font-size: 15px/23px
-	text-transform: uppercase
-	opacity: .5
-	transition: 0.3s
-	&:hover
-		letter-spacing: 9.15px
-		opacity: 1
-		color: $bluecolor
-
 .item__skew-hover
 	position: relative
 	transition: 0.3s
@@ -85,5 +85,5 @@
 		transform: skewY(-45deg)
 		transform-origin: bottom left 
 	&:hover:after
-		width: 40px
+		width: 2.5vw
 		

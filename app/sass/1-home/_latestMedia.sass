@@ -1,4 +1,4 @@
-.latest-media
+.media
 	margin-bottom: 37vh
 	span
 		text-transform: uppercase
@@ -17,22 +17,26 @@
 		line-height: 36px
 		font-family: fahkwangbold
 		margin-top: 39px
-	.latest-media__right-block
-		text-align: left
+		max-width: 583px
+	.media__right-block
 		display: flex
-		justify-content: center
-		align-items: center
+		justify-content: flex-start
+		align-items: flex-start
 		flex-direction: column
+	p
+		font-size: 12px
 
-.latest-media__row
+.media__row
 	display: flex
 	align-items: center
 
-.latest-media
-	.item__skew-hover
-		&::after
-			right: 180px
-			bottom: -30px
-		&:hover:after
-			width: 100px
-			right: 90px
+.latest-media__go-media
+	position: relative
+	left: 180px
+	transform: translateX(-50%)
+
+.latest-media__go-media.item__skew-hover
+	&::after
+		bottom: -3vh
+	&:hover:after
+		width: 10vh

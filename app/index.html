@@ -18,7 +18,7 @@
 <header class="header">
 	<div class="container">
 		<div class="row header__top-line">
-			<div class="col-md-7">
+			<div class="col-md-8">
 				<div class="header__logo">
 					<a href="/">
 						<picture>
@@ -27,7 +27,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-4">
 				<nav>
 					<ul class="header__menu">
 						<li class="menu__item item__skew-hover menu__item_active">
@@ -40,13 +40,13 @@
 							<a href="podcast.html">Podcast</a>
 						</li>
 						<li class="menu__item item__skew-hover">
-							<a href="#">Media</a>
+							<a href="media.html">Media</a>
 						</li>
 						<li class="menu__item item__skew-hover">
-							<a href="#">Services</a>
+							<a href="services.html">Services</a>
 						</li>
 						<li class="menu__item item__skew-hover">
-							<a href="#">Contact</a>
+							<a href="contacts.html">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -75,20 +75,21 @@
 			</div>
 		</div>
 		</div>
-		<div class="circle">
-			<svg class="svg-circle" viewBox="0 0 70 70" width="15%">
-				<defs>
-					<path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" fill="lightpink" id="tophalf"/>
-				</defs>
-				<text style="font: initial;">
-					<textPath xlink:href="#tophalf" startOffset="0%">Willa</textPath>
-					<textPath xlink:href="#tophalf" startOffset="25%">Willa</textPath>
-					<textPath xlink:href="#tophalf" startOffset="50%">Willa</textPath>
-					<textPath xlink:href="#tophalf" startOffset="75%">Willa</textPath>
-				</text>
-			</svg>
-		</div>
 	</section>
+
+	<div class="circle">
+		<svg class="svg-circle" viewBox="0 0 70 70" width="15%">
+			<defs>
+				<path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" fill="lightpink" id="tophalf"/>
+			</defs>
+			<text style="font: initial;">
+				<textPath xlink:href="#tophalf" startOffset="0%">Willa</textPath>
+				<textPath xlink:href="#tophalf" startOffset="25%">Willa</textPath>
+				<textPath xlink:href="#tophalf" startOffset="50%">Willa</textPath>
+				<textPath xlink:href="#tophalf" startOffset="75%">Willa</textPath>
+			</text>
+		</svg>
+	</div>
 
 <section class="bio">
 		<div class="bio__container">
@@ -111,21 +112,21 @@
 
 <section class="brands">
 	<div class="container">
-		<div class="row brands__row">
-			<div class="col-md-3"><img src="images/dest/brand.png" alt=""></div>
-			<div class="col-md-3"><img src="images/dest/brand.png" alt=""></div>
-			<div class="col-md-3"><img src="images/dest/brand.png" alt=""></div>
-			<div class="col-md-3"><img src="images/dest/brand.png" alt=""></div>
+		<div class="row brands__row justify-content-between">
+			<div class="col-md-2"><img src="images/dest/brand.png" alt=""></div>
+			<div class="col-md-2"><img src="images/dest/brand.png" alt=""></div>
+			<div class="col-md-2"><img src="images/dest/brand.png" alt=""></div>
+			<div class="col-md-2"><img src="images/dest/brand.png" alt=""></div>
 		</div>
 	</div>
 </section>
 
-<section class="latest-media">
+<section class="media latest-media">
 	<div class="container">
 		<span>latest media</span>
-		<div class="row latest-media__row">
-			<div class="col-md-6">
-				<div class="latest-media__left-block">
+		<div class="row media__row">
+			<div class="col-md-5">
+				<div class="media__left-block">
 					<a href="#">
 						<picture>
 							<img srcset="images/dest/interview-willa-stoutenbeek-1576597226@2x.png 2x" src="images/dest/interview-willa-stoutenbeek-1576597226.png" alt="">
@@ -136,8 +137,8 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="latest-media__right-block">
+			<div class="col-md-5 offset-md-2">
+				<div class="media__right-block">
 					<div class="video">
 						<iframe width="360" height="423" src="https://www.youtube.com/embed/1gh5JJDvdiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
@@ -158,13 +159,10 @@
 <footer>
 <div class="container">
 	<div class="row footer__row">
-		<div class="col-md-5">
 			<div class="footer__left-block">
 				<span>COPYRIGHT2020@WILLA</span>
 				<span>DESIGNED WITH LOVE BY @SOBI_DESIGN</span>
 			</div>
-		</div>
-		<div class="col-md-2">
 			<div class="circle">
 				<svg class="svg-circle" viewBox="0 0 70 70" width="100%">
 					<defs>
@@ -178,13 +176,10 @@
 					</text>
 				</svg>
 			</div>
-		</div>
-		<div class="col-md-5">
 			<div class="footer__right-block">
 				<span><a href="#">PRIVACY POLICY</a></span>
 				<span><a href="#">TERMS & CONDITIONS</a></span>
 			</div>
-		</div>
 	</div>
 </div>
 </footer>

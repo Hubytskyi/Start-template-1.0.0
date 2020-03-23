@@ -1,6 +1,7 @@
 .podcast__bloks
 	margin-bottom: 13.3vh
 	.podcast__block
+		position: relative
 		img
 			width: 100%
 		span
@@ -13,3 +14,13 @@
 			font-family: poppinsregular
 			font-size: 2.1vh
 			line-height: 3.3vh
+		&::after
+			content: ''
+			background: $bluecolor
+			position: absolute
+			right: -3vh
+			top: 11vh
+			width: 30vh
+			height: 30vh
+			border-radius: 100%
+			z-index: -1

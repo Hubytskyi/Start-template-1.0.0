@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	})
 
 	
-	const aboutFontSize = document.querySelector('.bio__about span')
+	const aboutFontSize = document.querySelector('.bio__about-page span')
 	const widthContainer = document.querySelector('.container').clientWidth
 	aboutFontSize.style=`font-size: ${widthContainer / 8.8}px; line-height: ${widthContainer / 10.7}px`;
 
