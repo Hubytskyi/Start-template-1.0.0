@@ -15,72 +15,66 @@
 
 <body>
 
-<header class="header">
-	<div class="container">
-		<div class="row header__top-line">
-			<div class="col-md-7">
-				<div class="header__logo">
-					<a href="/">
-						<picture>
-							<img srcset="images\Willa-Logos-02@2x.png 2x" src="images\Willa-Logos-02.png " alt="">
-						</picture>
-					</a>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="header__logo">
+						<a class="logo-link" href="/">
+							<img class="logo-img" src="images\Willa-Logos-02.png" alt="logo">
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-5">
-				<nav>
-					<ul class="header__menu">
-						<li class="menu__item item__skew-hover menu__item_active">
-							<a href="/">Home</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="about.html">About</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="podcast.html">Podcast</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="#">Media</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="#">Services</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="col-md-4">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover menu__link--active" href="/">Home</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="about.html">About</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="podcast.html">Podcast</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="media.html">Media</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="services.html">Services</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 	</header>
 
-	<section class="media latest-media">
+	<section class="media media__page">
 		<div class="container">
 			<div class="row media__row">
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<div class="media__left-block">
 						<a href="#">
 							<picture>
 								<img srcset="images/dest/interview-willa-stoutenbeek-1576597226@2x.png 2x" src="images/dest/interview-willa-stoutenbeek-1576597226.png" alt="">
 							</picture>
-							<h3>TITLE OF THE MEDIA SHOULD NOT BE BIGGER THAN THREE LINES, PLEASE WE NEED TO MAKE IT…</h3>
-							<p>Excerpt here space for two lines maximum,
-							<br>because it’s a preview state.</p>
+							<h3>Willa Stoutenbeek: ‘Je zou fouten kunnen zien als een zegen, omdat je nadien naar het volgende level wordt gekatapulteerd’</h3>
+							<p>Harper’s Bazaar</p>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-5 offset-md-2">
+				<div class="col-md-6 offset-md-2">
 					<div class="media__right-block">
 						<div class="video">
 							<iframe width="360" height="423" src="https://www.youtube.com/embed/1gh5JJDvdiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						<a href="#">
-							<h3>ONE LINE TITLE EXAMPLE</h3>
-							<p>Excerpt here space for two lines maximum,
-								<br>because it’s a preview state.</p>
-							<div class="latest-media__go-media go-to item__skew-hover">
-								<a class="button__circle" href="media.html">Go to Media</a>
-							</div>
+							<h3>Willa Stoutenbeek van W.Green over duurzame mode en circulariteit</h3>
+							<p>FashionUnited</p>
 						</a>
 					</div>
 				</div>
@@ -88,33 +82,75 @@
 		</div>
 	</section>
 
-<footer>
-<div class="container">
-	<div class="row footer__row">
-			<div class="footer__left-block">
-				<span>COPYRIGHT2020@WILLA</span>
-				<span>DESIGNED WITH LOVE BY @SOBI_DESIGN</span>
+	<section class="media__item_first media__top">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-md-7">
+					<div class="left_test">
+						<img src="images/dest/imageScaled.png" alt="">
+						<h3>People:
+							<br>Willa Stoutenbeek</h3>
+						<p>&C</p>
+					</div>
+				</div>
 			</div>
-			<div class="circle">
-				<svg class="svg-circle" viewBox="0 0 70 70" width="100%">
-					<defs>
-						<path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" fill="lightpink" id="tophalf"/>
-					</defs>
-					<text style="font: initial;">
-						<textPath xlink:href="#tophalf" startOffset="0%">Willa</textPath>
-						<textPath xlink:href="#tophalf" startOffset="25%">Willa</textPath>
-						<textPath xlink:href="#tophalf" startOffset="50%">Willa</textPath>
-						<textPath xlink:href="#tophalf" startOffset="75%">Willa</textPath>
-					</text>
-				</svg>
+		</div>
+	</section>
+
+	<section class="media__item_second media__top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="media__item_block">
+						<img src="images/dest/5986b4035e0188766eabaa8db923f07d.png" alt="">
+						<h3>ONE LINE TITLE EXAMPLE</h3>
+						<p>Excerpt here space for two lines maximum, because it’s a preview state.</p>
+					</div>
+				</div>
 			</div>
-			<div class="footer__right-block">
-				<span><a href="#">PRIVACY POLICY</a></span>
-				<span><a href="#">TERMS & CONDITIONS</a></span>
+		</div>
+	</section>
+
+	<section class="media__item_third">
+		<div class="container">
+			<div class="media__item_block">
+				<img src="images/dest/duurzaam-willa-stoutenbeek-1561641310.png" alt="">
+				<h3>Deze duurzaamheids Queen is knetter inspirerend</h3>
+				<p>Jan MAgazine</p>
 			</div>
-	</div>
-</div>
-</footer>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer__box">
+					<div class="footer__box--left">
+						<span class="footer__text">COPYRIGHT2020@WILLA</span>
+						<span class="footer__text">DESIGNED WITH LOVE BY @SOBI_DESIGN</span>
+					</div>
+					<div class="willa-circle footer__willa-circle">
+						<svg class="svg-circle" viewBox="0 0 70 70" width="100%">
+							<defs>
+								<path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" fill="lightpink" id="tophalf"/>
+							</defs>
+							<text style="font: initial;">
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="0%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="25%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="50%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="75%">Willa</textPath>
+							</text>
+						</svg>
+					</div>
+					<div class="footer__box--right">
+						<a class="link__footer" href="#">PRIVACY POLICY</a>
+						<a class="link__footer" href="#">TERMS & CONDITIONS</a>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</footer>
 	
 	
 	<script src="js/app.min.js"></script>

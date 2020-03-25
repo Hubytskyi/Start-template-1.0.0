@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	})
 
 	
-	const aboutFontSize = document.querySelector('.bio__about-page span')
+	const bioHeader = document.querySelector('.bio__header')
 	const widthContainer = document.querySelector('.container').clientWidth
-	aboutFontSize.style=`font-size: ${widthContainer / 8.8}px; line-height: ${widthContainer / 10.7}px`;
+	bioHeader.style=`font-size: ${widthContainer / 8.586}px; line-height: ${widthContainer / 10.25}px`;
 
 
 	// const podcastTitle = document.querySelector('.podcast__title')

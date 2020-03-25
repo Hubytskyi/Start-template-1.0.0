@@ -1,25 +1,54 @@
-footer
-	.footer__row
-		display: flex
-		align-items: center
-		letter-spacing: .75vh
-		color: $bluecolor
-		font-size: 1.5vh
-		font-weight: 600
-		margin-bottom: 13vh
-		justify-content: center
-		.footer__left-block
-			text-align: right
-		.circle
-			width: 22.7vh
-			textPath
-				letter-spacing: 0
-	a
-		color: $bluecolor
-		&:hover
-			color: inherit
-			
-.footer__left-block span:first-child,
-.footer__right-block span:first-child
+.footer
+	margin-bottom: 13vh
+
+.footer__box
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+
+.footer__box--left
+	text-align: right
+
+.footer__box--left,
+.footer__box--right
+	font-size: 1.5vh
+	letter-spacing: .75vh
+
+.footer__text,
+.link__footer
+	color: $bluecolor
 	display: block
-	margin-bottom: 3.4vh
+	font-size: 1.9vh
+	font-family: poppinssemibold
+	&:first-child
+		margin-bottom: 2vh
+
+.footer__willa-circle
+	max-width: 21vh
+	margin: 0 4.2vh
+
+// 	.footer__row
+// 		display: flex
+// 		align-items: center
+// 		letter-spacing: .75vh
+// 		color: $bluecolor
+// 		font-size: 1.5vh
+// 		font-weight: 600
+// 		margin-bottom: 13vh
+// 		justify-content: center
+// 		.footer__left-block
+// 			text-align: right
+// 		.circle
+// 			width: 22.7vh
+// 			textPath
+// 				letter-spacing: 0
+// 	a
+// 		color: $bluecolor
+// 		&:hover
+// 			color: inherit
+			
+// .footer__left-block span:first-child,
+// .footer__right-block a:first-child
+// 	display: block
+// 	margin-bottom: 3.4vh

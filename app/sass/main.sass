@@ -3,44 +3,46 @@
 @import 0-base/404.sass
 @import 0-base/buttons.sass
 
-@import header.sass
-@import footer.sass
+@import header
+@import footer
 
-@import 1-home/welcome.sass
-@import 1-home/bio.sass
-@import 1-home/brands.sass
-@import 1-home/latestMedia.sass
+@import 1-pages/home
+@import 1-pages/about
+@import 1-pages/podcast
 
-@import 2-about/bio.sass
+// @import 1-home/welcome.sass
+// @import 1-home/bio.sass
+// @import 1-home/brands.sass
+// @import 1-home/latestMedia.sass
 
-@import 3-podcast/podcast.sass
-@import 3-podcast/podcastItems.sass
-@import 3-podcast/podcastDescription.sass
-@import 3-podcast/podcastBloks.sass
+// @import 2-about/bio.sass
+
+// @import 3-podcast/podcast.sass
+// @import 3-podcast/podcastItems.sass
+// @import 3-podcast/podcastDescription.sass
+// @import 3-podcast/podcastBloks.sass
+
+// @import 4-media/media.sass
 
 // CUSTOM USER STYLES
 
 .container
-	max-width: 90vw
+	max-width: 87vw
 
-.circle
-	text-align: center
-	position: relative
-	z-index: 999
-	text-transform: uppercase
-	svg
-		transition: 0.3s
-		textPath
-			font-family: fahkwangbold
-			fill: $bluecolor
-			font-size: 8px
+.container__mini
+	max-width: 80vw
 
-.click-here
-	position: absolute
-	top: 32vh
+.title
+	font-family: condor
+	font-weight: 700
+	font-size: 3.2vh
+	line-height: 3.9vh
+	letter-spacing: 0.3vh
+
+.link-stretch
 	letter-spacing: 5px
 	color: $bluecolor
-	font-size: 15px/23px
+	font-size: 1.6vh
 	text-transform: uppercase
 	opacity: .5
 	transition: 0.3s
@@ -49,41 +51,119 @@
 		opacity: 1
 		color: $bluecolor
 
-.go-to
-	margin-top: 154px
-	display: flex
-	justify-content: center
-	.button__circle
-		font-size: 2.6vh
-		position: relative
-		text-align: right
-		transition: .3s
-		&:hover
-			color: $bluecolor
-		&::after
-			content: ''
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			border: 1px solid $bluecolor
-			border-radius: 100%
-			width: 27vh
-			height: 27vh
+.title--blue
+	color: $bluecolor
+	letter-spacing: 7px
+	font-size: 2vh
+	text-transform: uppercase
+	font-family: poppinssemibold
 
-.item__skew-hover
+.go-to__box
+	display: inline-block
+
+.link__circle
+	font-family: poppinsmedium
+	font-size: 2.55vh
+	line-height: 3.6vh
 	position: relative
+	transition: 0.3s
+	z-index: 42
+	&:hover
+		color: $bluecolor
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		border: 1px solid $bluecolor
+		border-radius: 100%
+		width: 27vh
+		height: 27vh
+
+.circle__text-path
+	font-family: condor
+	font-weight: 700
+	fill: $bluecolor
+	font-size: 6px
+	letter-spacing: 2px
+	text-transform: uppercase
+
+.item__skew--hover
 	transition: 0.3s
 	&::after
 		content: ''
 		background: $bluecolor
 		position: absolute
-		bottom: -8px
+		left: 20%
+		bottom: -80%
 		width: 1px
 		height: 1px
 		transition: 0.3s
 		transform: skewY(-45deg)
-		transform-origin: bottom left 
+		transform-origin: left top
 	&:hover:after
-		width: 2.5vw
+		width: 5vw
+
+// .circle
+// 	text-align: center
+// 	position: relative
+// 	z-index: 999
+// 	text-transform: uppercase
+// 	svg
+// 		transition: 0.3s
+// 		textPath
+// 			font-family: fahkwangbold
+// 			fill: $bluecolor
+// 			font-size: 8px
+
+// .click-here
+// 	letter-spacing: 5px
+// 	color: $bluecolor
+// 	font-size: 1.6vh
+// 	text-transform: uppercase
+// 	opacity: .5
+// 	transition: 0.3s
+// 	&:hover
+// 		letter-spacing: 9.15px
+// 		opacity: 1
+// 		color: $bluecolor
+
+// .go-to
+// 	margin-top: 154px
+// 	display: flex
+// 	justify-content: center
+// 	.button__circle
+// 		font-size: 2.6vh
+// 		position: relative
+// 		text-align: right
+// 		transition: .3s
+// 		&:hover
+// 			color: $bluecolor
+// 		&::after
+// 			content: ''
+// 			position: absolute
+// 			top: 50%
+// 			left: 50%
+// 			transform: translate(-50%, -50%)
+// 			border: 1px solid $bluecolor
+// 			border-radius: 100%
+// 			width: 27vh
+// 			height: 27vh
+
+// .item__skew-hover
+// 	position: relative
+// 	transition: 0.3s
+// 	&::after
+// 		content: ''
+// 		background: $bluecolor
+// 		position: absolute
+// 		bottom: -8px
+// 		width: 1px
+// 		height: 1px
+// 		transition: 0.3s
+// 		transform: skewY(-45deg)
+// 		transform-origin: bottom left 
+// 	&:hover:after
+// 		width: 2.5vw
 		

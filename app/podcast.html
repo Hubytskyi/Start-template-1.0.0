@@ -15,352 +15,261 @@
 
 <body>
 
-<header class="header">
-	<div class="container">
-		<div class="row header__top-line">
-			<div class="col-md-7">
-				<div class="header__logo">
-					<a href="/">
-						<picture>
-							<img srcset="images\Willa-Logos-02@2x.png 2x" src="images\Willa-Logos-02.png " alt="">
-						</picture>
-					</a>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="header__logo">
+						<a class="logo-link" href="/">
+							<img class="logo-img" src="images\Willa-Logos-02.png" alt="logo">
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-5">
-				<nav>
-					<ul class="header__menu">
-						<li class="menu__item item__skew-hover menu__item_active">
-							<a href="/">Home</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="about.html">About</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="podcast.html">Podcast</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="media.html">Media</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="services.html">Services</a>
-						</li>
-						<li class="menu__item item__skew-hover">
-							<a href="contacts.html">Contact</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="col-md-4">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover menu__link--active" href="/">Home</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="about.html">About</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="podcast.html">Podcast</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="media.html">Media</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="services.html">Services</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__link item__skew--hover" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 	</header>
 
-	<div class="podcast__go-to go-to item__skew-hover">
-		<a class="button__circle" href="#">Episode 1</a>
-	</div>
-
-	<section class="podcast">
+	<section class="podcast__head">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-offset-md-6">
-					<div class="podcast__title">
-						<h1 clas="title__item">Ethics +</h1>
-						<h1 clas="title__item">Aesthetics</h1>
-					</div>
-					<div class="podcast__subtitle">
-						<span>The Podcast</span>
-					</div>
+				<div class="podcast__head-title">
+					<h1 class="podcast__head-title-item">Ethics + Aesthetics</h1>
+					<span class="podcast__head-subtitle-item">The Podcast</span>
 				</div>
 			</div>
 		</div>
-		<div class="podcast__right-block">
-			<ul class="podcast__right-block_list">
-				<li>Ethics</li>
-				<li class="podcast__item-first">Ethics</li>
-				<li>Ethics</li>
-				<li>Aesthetics</li>
-				<li class="podcast__item-second">Aesthetics</li>
-				<li>Aesthetics</li>
-				<li>Ethics</li>
-				<li class="podcast__item-first">Ethics</li>
-				<li>Ethics</li>
-				<li>Aesthetics</li>
-				<li class="podcast__item-second">Aesthetics</li>
-				<li>Aesthetics</li>
-				<li>Ethics</li>
-				<li class="podcast__item-first">Ethics</li>
-				<li>Ethics</li>
-				<li>Aesthetics</li>
-				<li class="podcast__item-second">Aesthetics</li>
-				<li>Aesthetics</li>
+		<div class="podcast__head--right">
+			<ul class="podcast__head-list--right">
+				<li class="podcast__head-item">Ethics</li>
+				<li class="podcast__head-item podcast__head-item--active">Ethics</li>
+				<li class="podcast__head-item">Ethics</li>
+				<li class="podcast__head-item">Aesthetics</li>
+				<li class="podcast__head-item podcast__head-item--active">Aesthetics</li>
+				<li class="podcast__head-item">Aesthetics</li>
+				<li class="podcast__head-item">Ethics</li>
+				<li class="podcast__head-item podcast__head-item--active">Ethics</li>
+				<li class="podcast__head-item">Ethics</li>
+				<li class="podcast__head-item">Aesthetics</li>
+				<li class="podcast__head-item podcast__head-item--active">Aesthetics</li>
+				<li class="podcast__head-item">Aesthetics</li>
+				<li class="podcast__head-item">Ethics</li> 
+				<li class="podcast__head-item podcast__head-item--active">Ethics</li>
+				<li class="podcast__head-item">Ethics</li>
+				<li class="podcast__head-item">Aesthetics</li>
+				<li class="podcast__head-item podcast__head-item--active">Aesthetics</li>
+				<li class="podcast__head-item">Aesthetics</li>
 			</ul>
+		</div>
+		<div class="go-to__box go-to__media-page item__skew--hover">
+			<a class="link__circle link__circle--media-page" href="media.html">Go to Media</a>
 		</div>
 	</section>
 
-	<section class="podcast__description">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="description__block">
-						<h4>Ethics + Aesthetics</h4>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<section class="podcast__text">
+		<div class="title--blue">Ethics + Aesthetics</div>
+		<p class="podcast__text-descr">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
 	</section>
 
 	<section class="podcast__items">
-			<div class="container podcast__item_container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="item__block_left">
-							<span class="episode">Episode 1</span>
-							<h3 class="podcast__item_title">What is sustainable fashion and we we should do that?</h3>
-							<span class="podcast__item_subtitle">With Guest Name and Surname</span>
-							<span class="podcast__item_category">Ethics +</span>
-							<span class="podcast__item_category">Aesthetics</span>
-						</div>						
-					</div>
-					<div class="col-md-6">
-						<div class="item__block_right">
-							<img src="images/dest/Illustration.png" alt="">
-							<ul>
-								<li>Ethics</li>
-								<li class="podcast__item-first">Ethics</li>
-								<li>Ethics</li>
-								<li>Aesthetics</li>
-								<li class="podcast__item-second">Aesthetics</li>
-								<li>Aesthetics</li>
-								<li>Ethics</li>
-								<li class="podcast__item-first">Ethics</li>
-								<li>Ethics</li>
-								<li>Aesthetics</li>
-								<li class="podcast__item-second">Aesthetics</li>
-								<li>Aesthetics</li>
-								<li>Ethics</li>
-								<li class="podcast__item-first">Ethics</li>
-								<li>Ethics</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="container__item_play">
-						<div class="item_play">
-							<div class="play">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-									<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-									<g>
-										<g>
-											<path d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M357.771,264.969
-												l-149.333,96c-1.75,1.135-3.771,1.698-5.771,1.698c-1.75,0-3.521-0.438-5.104-1.302C194.125,359.49,192,355.906,192,352V160
-												c0-3.906,2.125-7.49,5.563-9.365c3.375-1.854,7.604-1.74,10.875,0.396l149.333,96c3.042,1.958,4.896,5.344,4.896,8.969
-												S360.813,263.01,357.771,264.969z"/>
-										</g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-								</svg>
-								<span>Saturday Charm - Moon Tune</span>
-							</div>
-							<div class="soundcloud">
-								<a href=""><img src="images/soundcloud-1.svg" alt=""></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container podcast__item_container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="item__block_left">
-							<span class="episode">Episode 2</span>
-							<h3 class="podcast__item_title">What is sustainable fashion and we we should do that?</h3>
-							<span class="podcast__item_subtitle">With Guest Name and Surname</span>
-							<span class="podcast__item_category">Ethics +</span>
-							<span class="podcast__item_category">Aesthetics</span>
-						</div>						
-					</div>
-					<div class="col-md-6">
-						<div class="item__block_right">
-							<img src="images/dest/Willa.png" alt="">
-							<ul>
-								<li>Ethics</li>
-								<li class="podcast__item-first">Ethics</li>
-								<li>Ethics</li>
-								<li>Aesthetics</li>
-								<li class="podcast__item-second">Aesthetics</li>
-								<li>Aesthetics</li>
-								<li>Ethics</li>
-								<li class="podcast__item-first">Ethics</li>
-								<li>Ethics</li>
-								<li>Aesthetics</li>
-								<li class="podcast__item-second">Aesthetics</li>
-								<li>Aesthetics</li>
-								<li>Ethics</li>
-								<li class="podcast__item-first">Ethics</li>
-								<li>Ethics</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="container__item_play">
-						<div class="item_play">
-							<div class="play">
-								<?xml version="1.0" encoding="iso-8859-1"?>
-									<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-									<g>
-										<g>
-											<path d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M357.771,264.969
-												l-149.333,96c-1.75,1.135-3.771,1.698-5.771,1.698c-1.75,0-3.521-0.438-5.104-1.302C194.125,359.49,192,355.906,192,352V160
-												c0-3.906,2.125-7.49,5.563-9.365c3.375-1.854,7.604-1.74,10.875,0.396l149.333,96c3.042,1.958,4.896,5.344,4.896,8.969
-												S360.813,263.01,357.771,264.969z"/>
-										</g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-									<g>
-									</g>
-								</svg>
-								<span>Saturday Charm - Moon Tune</span>
-							</div>
-							<div class="soundcloud">
-								<a href=""><img src="images/soundcloud-1.svg" alt=""></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-
-	<section class="podcast__description">
-		<div class="container">
+		<div class="container podcast__item-container">
 			<div class="row">
-				<div class="col-12">
-					<div class="description__block">
-						<h4>THE MAKERS</h4>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+					<div class="col-md-6">
+						<div class="podcast__item--left">
+							<div class="podcast__episode">Episode 1</div>
+							<h3 class="podcast__item-title">What is sustainable fashion and we we should do that?</h3>
+							<div class="podcast__item-subtitle">With Guest Name and Surname</div>
+							<div class="podcast__item-cat">Ethics + <br>Aesthetics</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="podcast__item--right">
+							<img class="podcast__item-img" src="images/dest/Illustration.png" alt="podcast">
+							<ul class="podcast__item-list">
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Ethics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Aesthetics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Ethics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Aesthetics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Ethics</li>
+								<li class="podcast__item-elem">Ethics</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+				<div class="podcast__container-play">
+					<div class="podcast__item-play">
+						<div class="play">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<svg class="podcast__svg-play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<path d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M357.771,264.969
+										l-149.333,96c-1.75,1.135-3.771,1.698-5.771,1.698c-1.75,0-3.521-0.438-5.104-1.302C194.125,359.49,192,355.906,192,352V160
+										c0-3.906,2.125-7.49,5.563-9.365c3.375-1.854,7.604-1.74,10.875,0.396l149.333,96c3.042,1.958,4.896,5.344,4.896,8.969
+										S360.813,263.01,357.771,264.969z"/>
+							</svg>
+						<div class="podcast__play-name">Saturday Charm - Moon Tune</div>
+						</div>
+						<div class="soundcloud">
+							<a class="link__soundcloud" href="#">
+								<img class="soundcloud__img" src="images/dest/soundcloud-1.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container podcast__item-container">
+			<div class="row">
+					<div class="col-md-6">
+						<div class="podcast__item--left">
+							<div class="podcast__episode">Episode 2</div>
+							<h3 class="podcast__item-title">What is sustainable fashion and we we should do that?</h3>
+							<div class="podcast__item-subtitle">With Guest Name and Surname</div>
+							<div class="podcast__item-cat">Ethics + <br>Aesthetics</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="podcast__item--right">
+							<img class="podcast__item-img" src="images/dest/Willa.png" alt="podcast">
+							<ul class="podcast__item-list">
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Ethics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Aesthetics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Ethics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Aesthetics</li>
+								<li class="podcast__item-elem">Aesthetics</li>
+								<li class="podcast__item-elem">Ethics</li>
+								<li class="podcast__item-elem podcast__item-elem--active">Ethics</li>
+								<li class="podcast__item-elem">Ethics</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+				<div class="podcast__container-play">
+					<div class="podcast__item-play">
+						<div class="play">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<svg class="podcast__svg-play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<path d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M357.771,264.969
+										l-149.333,96c-1.75,1.135-3.771,1.698-5.771,1.698c-1.75,0-3.521-0.438-5.104-1.302C194.125,359.49,192,355.906,192,352V160
+										c0-3.906,2.125-7.49,5.563-9.365c3.375-1.854,7.604-1.74,10.875,0.396l149.333,96c3.042,1.958,4.896,5.344,4.896,8.969
+										S360.813,263.01,357.771,264.969z"/>
+							</svg>
+						<div class="podcast__play-name">Saturday Charm - Moon Tune</div>
+						</div>
+						<div class="soundcloud">
+							<a class="link__soundcloud" href="#">
+								<img class="soundcloud__img" src="images/dest/soundcloud-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="podcast__bloks">
+	<section class="podcast__text">
+		<div class="title--blue">THE MAKERS</div>
+		<p class="podcast__text-descr">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+	</section>
+
+	<section class="podcast__columns">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-md-3">
-					<div class="podcast__block">
-						<img src="images/dest/Willa.png" alt="">
-						<span class="title">Willa</span>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+					<div class="podcast__column">
+						<img class="column__img" src="images/dest/Willa.png" alt="">
+						<div class="column__name">Willa</div>
+						<p class="column__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="podcast__block">
-						<img src="images/dest/Willa.png" alt="">
-						<span class="title">SOMEONE ELSE</span>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+					<div class="podcast__column">
+						<img class="column__img" src="images/dest/Willa.png" alt="">
+						<div class="column__name">Willa</div>
+						<p class="column__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="podcast__block">
-						<img src="images/dest/Willa.png" alt="">
-						<span class="title">SOMEONE ELSE</span>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+					<div class="podcast__column">
+						<img class="column__img" src="images/dest/Willa.png" alt="">
+						<div class="column__name">Willa</div>
+						<p class="column__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer>
+	<footer class="footer">
 		<div class="container">
-			<div class="row footer__row">
-					<div class="footer__left-block">
-						<span>COPYRIGHT2020@WILLA</span>
-						<span>DESIGNED WITH LOVE BY @SOBI_DESIGN</span>
+			<div class="row">
+				<div class="footer__box">
+					<div class="footer__box--left">
+						<span class="footer__text">COPYRIGHT2020@WILLA</span>
+						<span class="footer__text">DESIGNED WITH LOVE BY @SOBI_DESIGN</span>
 					</div>
-					<div class="circle">
+					<div class="willa-circle footer__willa-circle">
 						<svg class="svg-circle" viewBox="0 0 70 70" width="100%">
 							<defs>
 								<path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" fill="lightpink" id="tophalf"/>
 							</defs>
 							<text style="font: initial;">
-								<textPath xlink:href="#tophalf" startOffset="0%">Willa</textPath>
-								<textPath xlink:href="#tophalf" startOffset="25%">Willa</textPath>
-								<textPath xlink:href="#tophalf" startOffset="50%">Willa</textPath>
-								<textPath xlink:href="#tophalf" startOffset="75%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="0%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="25%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="50%">Willa</textPath>
+								<textPath class="circle__text-path" xlink:href="#tophalf" startOffset="75%">Willa</textPath>
 							</text>
 						</svg>
 					</div>
-					<div class="footer__right-block">
-						<span><a href="#">PRIVACY POLICY</a></span>
-						<span><a href="#">TERMS & CONDITIONS</a></span>
+					<div class="footer__box--right">
+						<a class="link__footer" href="#">PRIVACY POLICY</a>
+						<a class="link__footer" href="#">TERMS & CONDITIONS</a>
 					</div>
+				</div>				
 			</div>
 		</div>
-		</footer>
+	</footer>
 	
 	<script src="js/app.min.js"></script>
 

@@ -1,23 +1,30 @@
 .header
-	.container
-		height: 100%
-		.header__top-line
-			display: flex
-			align-items: center
-		.header__logo
-			picture
-				img
-					height: 10vh
-		.header__menu
-			display: flex
-			align-items: center
-			justify-content: space-between
-			font-size: .9vw
-			.menu__item_active
-				a
-					color: $bluecolor
+	height: 10vh
 
-.header__menu
-	.item__skew-hover
-		&::after
-			left: 8px
+.logo-img
+	height: 10vh
+
+.menu
+	height: 100%
+	display: flex
+	align-items: center
+	&__list
+		display: flex
+		justify-content: space-between
+		width: 100%
+	&__link
+		position: relative
+		color: $textcolor
+		font-size: .9vw
+		font-family: poppinslight
+		&:hover
+			text-decoration: none
+			color: $textcolor
+	&__link--active
+		color: $bluecolor
+		&:hover
+			color: $bluecolor
+
+.item__skew--hover.menu__link
+	&:hover:after
+		width: 2vw
