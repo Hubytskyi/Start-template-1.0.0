@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	const bioHeader = document.querySelector('.bio__header')
 	const widthContainer = document.querySelector('.container').clientWidth
-	bioHeader.style=`font-size: ${widthContainer / 8.586}px; line-height: ${widthContainer / 10.25}px`;
+	bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
 
 
 	// const podcastTitle = document.querySelector('.podcast__title')
