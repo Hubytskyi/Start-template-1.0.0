@@ -1,3 +1,5 @@
+// ___ Head Section ___
+
 .podcast__head
 	font-family: gothambold
 	height: 98vh
@@ -5,7 +7,6 @@
 	color: #fff
 	position: relative
 	margin-top: 3vh
-	// z-index: -2
 	&::after
 		content: ''
 		background: $accent
@@ -15,7 +16,6 @@
 		position: absolute
 		left: 29vw
 		top: 13vh
-		// z-index: -1
 
 .podcast__head-title
 	margin-top: 30vh
@@ -40,7 +40,6 @@
 	height: 98vh
 	width: 100%
 	top: 0
-	// z-index: -1
 
 .podcast__head-list--right
 	height: 100%
@@ -58,6 +57,26 @@
 .podcast__head-item--active
 	color: #FFB2B2
 
+.go-to__media-page
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	bottom: 15vh
+	z-index: 999
+
+.item__skew--hover.go-to__media-page
+	&::after
+		background: #fff
+
+.link__circle.link__circle--media-page
+	color: #fff
+	&:hover
+		color: #fff
+	&::after
+		border: 1px solid #fff
+
+// ___ Text Section ___
+
 .podcast__text
 	text-align: center
 	max-width: 57vw
@@ -66,6 +85,8 @@
 .podcast__text-descr
 	font-size: 2.1vh
 	margin-top: 6vh
+
+// ___ ITEMS Section ___
 
 .podcast__items
 	display: flex
@@ -158,11 +179,6 @@
 	display: flex
 	justify-content: space-between
 
-.play
-	cursor: pointer
-	display: flex
-	align-items: center
-
 .podcast__svg-play
 	width: 7vh
 	fill: #ed472f
@@ -172,13 +188,17 @@
 	font-size: 4.5vh
 	font-family: condor
 
-.soundcloud
+.play
+	cursor: pointer
 	display: flex
 	align-items: center
 
-.soundcloud__img
-	max-width: 17vw
-	opacity: 0.5
+.soundcloud
+	display: flex
+	align-items: center
+	&__img
+		max-width: 17vw
+		opacity: 0.5
 
 .podcast__items
 	.podcast__item-container:nth-child(even)
@@ -192,6 +212,7 @@
 				.podcast__item-elem--active
 					color: transparent
 
+// ___ Columns Section ___
 
 .podcast__columns
 	margin-bottom: 13.3vh
@@ -209,35 +230,15 @@
 		border-radius: 100%
 		z-index: -1
 
-.column__img
-	width: 100%
-
-.column__name
-	margin: 3.7vh 0
-	font-size: 2vh
-	font-family: poppinssemibold
-	text-transform: uppercase
-
-.column__text
-	font-family: poppinsregular
-	font-size: 2.1vh
-	line-height: 3.3vh
-
-.go-to__media-page
-	position: absolute
-	left: 50%
-	transform: translateX(-50%)
-	bottom: 15vh
-	z-index: 999
-
-.item__skew--hover.go-to__media-page
-	&::after
-		background: #fff
-
-	
-.link__circle.link__circle--media-page
-	color: #fff
-	&:hover
-		color: #fff
-	&::after
-		border: 1px solid #fff
+.column
+	&__img
+		width: 100%
+	&__name
+		margin: 3.7vh 0
+		font-size: 2vh
+		font-family: poppinssemibold
+		text-transform: uppercase
+	&__text
+		font-family: poppinsregular
+		font-size: 2.1vh
+		line-height: 3.3vh
