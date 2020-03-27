@@ -1,27 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	var swiper = new Swiper('.swiper-container', {
-		loop: true,
-		pagination: {
-      el: '.swiper-pagination',
-    },
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	});
-
 	const circle = document.querySelectorAll(".svg-circle");
 	circle.forEach( (el) => {
 		window.addEventListener('scroll', function() {
 			el.style = `transform:rotate(${window.pageYOffset / 2}deg)`;
 			});
 	})
+
+	let consultancySlider = document.querySelector('.consultancy__slider')
+	if(consultancySlider){
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	}
 	
 	const bioHeader = document.querySelector('.bio__header')
 	const widthContainer = document.querySelector('.container').clientWidth
 	bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
 	
+
 
 
 	// const menuLink = document.querySelectorAll('.menu__link')

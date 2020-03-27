@@ -1,0 +1,38 @@
+.contacts
+	height: 87.5vh
+
+.contacts__block
+	z-index: 1
+	position: relative
+	height: 87.5vh
+	margin:
+		left: 23.5vh
+		top: 29vh	
+	&::before
+		content: ''
+		position: absolute
+		background: $accent
+		width: 44vh
+		height: 44vh
+		left: -21vh
+		top: -6vh
+		border-radius: 100%
+		z-index: -1
+
+.contacts__text
+	font-size: 2.2vh
+	margin-bottom: 2.8vh
+
+.contacts__email
+	font-family: condor
+	font-weight: 700
+	font-size: 4.4vh
+	letter-spacing: .4vh
+	margin: 
+		top: 7.5vh
+		bottom: 5vh
+
+.contacts__email:last-child
+	margin:
+		top: 6.5vh
+		bottom: 0
