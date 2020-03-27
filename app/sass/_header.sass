@@ -17,6 +17,7 @@
 		color: $textcolor
 		font-size: .9vw
 		font-family: poppinslight
+		white-space: nowrap
 		&:hover
 			text-decoration: none
 			color: $textcolor
@@ -25,8 +26,26 @@
 		&:hover
 			color: $bluecolor
 
+.menu__list-item
+	position: relative
+
+.submenu__list-services
+	position: absolute
+	opacity: 1
+	top: 3.2vh
+	z-index: 3
+	transition: opacity 0.3s
+	visibility: hidden
+	.menu__link
+		font-size: 1.5vh
+
+.menu__list--submenu:hover .submenu__list-services
+	opacity: 1
+	visibility: visible
+
 .item__skew--hover.menu__link
 	&:after
 		bottom: -80%
 	&:hover:after
 		width: 2vw
+

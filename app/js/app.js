@@ -7,9 +7,20 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 	})
 	
-	const bioHeader = document.querySelector('.bio__header')
-	const widthContainer = document.querySelector('.container').clientWidth
-	bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
+	// const bioHeader = document.querySelector('.bio__header')
+	// const widthContainer = document.querySelector('.container').clientWidth
+	// bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
+	
+	var swiper = new Swiper('.swiper-container', {
+		loop: true,
+		pagination: {
+      el: '.swiper-pagination',
+    },
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
 
 	// const menuLink = document.querySelectorAll('.menu__link')
 	// menuLink.classList.remove('menu__link--active')

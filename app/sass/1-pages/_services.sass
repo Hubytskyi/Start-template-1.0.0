@@ -1,0 +1,123 @@
+// __ Main Slider __
+	
+.services__slider
+	position: relative
+	padding-top: 4vh
+	&-image
+		position: relative
+		&::after
+			content: ''
+			background: $accent
+			width: 45vh
+			height: 45vh
+			border-radius: 100%
+			position: absolute
+			right: 3vw
+			top: 52%
+			transform: translateY(-50%)
+			z-index: -1
+	&-img
+		max-height: 75vh
+	&-title
+		font-size: 4.8vh!important
+		line-height: 7.8vh!important
+		max-width: 80vh
+		margin: 
+			top: 16vh
+			bottom: 3.3vh
+
+.services__slider-subtitle
+	font-size: 1.9vh
+	font-family: poppinssemibold
+	line-height: 2.9vh
+	letter-spacing: .8vh
+
+.company__name
+	color: $accent
+
+.services__title
+	text-align: center
+	margin-bottom: 7vh
+
+.swiper-button-next
+	top: unset
+	justify-content: start
+	align-items: flex-end
+	right: 4vh
+	height: 0
+	margin-top: 0
+	&::after
+		content: none
+
+.swiper-slide
+	width: 100%!important
+
+.swiper-pagination
+	text-align: right
+	bottom: 0!important
+	right: 10vh
+	width: unset!important
+
+.swiper-pagination-bullet
+	width: 1.4vh
+	height: 1.4vh
+	background: $bluecolor
+	opacity: 1
+
+.swiper-pagination-bullet-active
+	background: $accent
+
+
+// __ Text Section __
+
+.services__text
+	text-align: center
+
+.services__text-block
+	font-size: 2.2vh
+	max-width: 57vw
+	margin: 14vh auto 0
+	.title--blue
+		color: $textcolor
+		margin-bottom: 4vh
+
+// __ Common Section __
+
+.service__block-inner-img
+	max-width: 100%
+
+.service__descr
+	font-size: 2.2vh
+	margin-top: 5vh
+	max-width: 57vw
+
+// __ First Section __
+
+.service__block--first
+	margin-top: 12vh
+
+.service__block--right-first
+	margin:
+		top: 11vh
+		left: 7vh
+
+.service__block--second
+	margin-top: -5vh
+
+// Services Contacts Section
+
+.services__contacts
+	text-align: center
+
+.services__contacts-block
+	margin: 17vh auto
+
+.services__contacts-text
+	font-size: 2.2vh
+
+.services__contacts-email
+	font-family: condor
+	font-weight: 700
+	font-size: 4.4vh
+	margin-top: 3vh
+	letter-spacing: .4vh
