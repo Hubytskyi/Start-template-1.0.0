@@ -9,55 +9,41 @@
 .media__block-inner-img
 	max-width: 100%
 
-// ___ First Section ___
+// __ Odd Sections __
 
-.media__block--first
+.media__block--odd
 	margin-top: 12vh
 
-.media__block--first-right
-	margin-left: 7vh
-
-.title__left-block--first
-	margin: 
-		top: 4.3vh
-		bottom: 5.2vh
-
-.title__right-block--first
-	max-width: 64vh
-	margin: 
-		top: 4.3vh
-		bottom: 3.3vh
-
-// ___ Second Section ___
-
-.media__block--right-second
-	margin-top: -23.5vh
-	margin-left: 14.5vh
-	
-.media__block--left-second
-	margin-top: 42.5vh
-
-.title__right-block--second
-	max-width: 66vh
-	margin: 
-		top: 8vh
+.media__title--blue
+	margin:
+		top: 5vh
 		bottom: 5vh
 
-.title__left-block--second
-	margin: 
-		top: 4.3vh
-		bottom: 3.5vh
+.media__block--right-odd
+	margin:
+		top: 11vh
+		left: 7vh
+
+// __ Even Sections __
+
+.media__block--left-even
+	margin-top: 48vh
+
+.media__block--right-even
+	margin-top: -19vh
+
+.media__block--even
+	margin-bottom: 26vh
 
 // ___ Featured Section ___
 
 .media__featured
-	margin-top: 26vh
+	margin-bottom: 16vh
 	position: relative
 
 .media__featured--top
 	position: absolute
 	top: 0
-	text-transform: uppercase
 	color: #fff
 	font-family: poppinssemibold
 	font-size: 2vh
@@ -65,6 +51,7 @@
 	top: 10vh
 	left: 30vh
 	z-index: 42
+	text-transform: uppercase
 	&::after
 		position: absolute
 		content: ''
@@ -76,56 +63,12 @@
 		transform: translate(-50%, -50%)
 		border-radius: 100%
 		z-index: -1
-
+		
 .media__featured-title
 	max-width: 60vh
 	margin: 
 		top: 7.6vh
 		bottom: 3.3vh
-
-// ___ Third Section ___
-
-.media__block--third
-	margin-top: 16.5vh
-
-.media__block--right-third
-	margin:
-		top: 11vh
-		left: 7vh
-
-.title__left-block--third
-	margin: 
-		top: 4.3vh
-		bottom: 3.5vh
-
-.title__right-block--third
-	max-width: 64vh
-	margin: 
-		top: 3.5vh
-		bottom: 3.3vh
-
-// ___ Fourth Section ___
-
-.media__block--fourth
-	margin-bottom: 27vh
-
-.media__block--right-fourth
-	margin-top: -17.5vh
-	margin-left: 14vh
-	
-.media__block--left-fourth
-	margin-top: 50vh
-
-.title__right-block--fourth
-	max-width: 66vh
-	margin: 
-		top: 8vh
-		bottom: 3.7vh
-
-.title__left-block--fourth
-	margin: 
-		top: 3vh
-		bottom: 3.5vh
 
 // Media Item 
 
