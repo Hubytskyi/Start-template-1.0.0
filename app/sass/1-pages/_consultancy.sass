@@ -18,9 +18,10 @@
 			z-index: -1
 	&-img
 		max-height: 75vh
-	&-title
-		font-size: 4.8vh!important
-		line-height: 7.8vh!important
+
+.title.consultancy__slider-title
+		font-size: 4.8vh
+		line-height: 7.8vh
 		max-width: 80vh
 		margin: 
 			top: 16vh
@@ -66,7 +67,6 @@
 
 .swiper-pagination-bullet-active
 	background: $accent
-
 
 // __ Text Section __
 
@@ -118,6 +118,99 @@
 .consultancy__contacts-email
 	font-family: condor
 	font-weight: 700
-	font-size: 4.4vh
+	font-size: 2.15vw
 	margin-top: 3vh
 	letter-spacing: .4vh
+
+@media screen and (max-width: 767px)
+
+	.consultancy__block-inner-img
+		width: 100%
+		height: 62vh
+		object-fit: cover
+		// object-position: right
+
+	.consultancy__title
+		margin-bottom: 4vh
+		text-align: left
+	
+	.consultancy__slider
+		&-img
+			max-width: 70vw
+		&-image
+			&::after
+				width: 55vw
+				height: 55vw
+				right: 0
+
+	.title.consultancy__slider-title
+		font-size: 20px
+		line-height: 27px
+		letter-spacing: 1.8px
+		margin:
+			top: 33px
+			bottom: 47px
+
+	.consultancy__text-block
+		text-align: left
+		font-size: 14px
+		line-height: 21px
+		letter-spacing: 0
+		margin: 77px 0 0 0
+		padding: 0 15px
+		max-width: 100%
+
+	.consultancy__block--odd
+		margin-top: 37px
+
+	.consultancy__descr
+		font-size: 14px
+		line-height: 21px
+		letter-spacing: 0
+		max-width: 100%
+		margin:
+			top: 20px
+			bottom: 0
+
+	.consultancy__slider-subtitle
+		font-size: 10px
+		line-height: 16px
+		letter-spacing: 4.1px
+
+	.swiper-pagination-bullet
+		width: 7px
+		height: 7px
+
+	.consultancy__block--right-odd,
+	.consultancy__block--even
+		margin:
+			top: 0
+			left: 0
+
+	.consultancy__block--left-odd,
+	.consultancy__block--right-odd,
+	.consultancy__block--left-even,
+	.consultancy__block--right-even,
+		margin-bottom: 50px
+
+	.consultancy__text-block
+		margin-top: 50px
+		.title--blue
+			color: $bluecolor
+
+	.consultancy__contacts-block
+		text-align: left
+		margin: 50px 0 94px 0
+		padding: 0 15px
+
+	.consultancy__contacts-text
+		font-size: 20px
+		line-height: 30px
+		letter-spacing: 0
+
+	.consultancy__contacts-email
+		font-size: 20px
+		line-height: 27px
+		letter-spacing: 1.8px
+		word-break: break-all
+		

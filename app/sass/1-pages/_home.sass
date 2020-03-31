@@ -1,7 +1,6 @@
 // __ Welcome Section __
 
 .welcome
-	height: 90vh
 	position: relative
 	padding-top: 14.5vh
 	&__image
@@ -9,23 +8,29 @@
 		&::after
 			content: ''
 			background: $accent
-			width: 45vh
-			height: 45vh
+			width: 22vw
+			height: 22vw
 			border-radius: 100%
 			position: absolute
 			right: 3vw
-			top: 52%
-			transform: translateY(-50%)
+			top: 22%
 			z-index: -1
 	&__img
 		max-height: 75vh
-	&__title
-		font-size: 4.8vh!important
-		line-height: 5.8vh!important
-		max-width: 60vh
+		max-width: 100%
+	&__text
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+.title.welcome__title
+		font-size: 2.5vw
+		line-height: 2.8vw
+		max-width: 32vw
 		margin: 
-			top: 31vh
-			bottom: 9.3vh
+			top: 11vw
+			bottom: 5vw
 
 // __ Bio Section __
 
@@ -40,6 +45,7 @@
 		background-repeat: no-repeat
 		background-position: bottom
 		position: absolute
+		left: 0
 		&::after
 			content: ''
 			position: absolute
@@ -50,24 +56,27 @@
 	&__box
 		padding-left: 55px
 		margin-top: 22vh
+		display: flex
+		flex-direction: column
+		align-items: flex-start
 	&__title
 		margin-bottom: 7.2vh
 	&__text
-		font-size: 1.05vw
+		font-size: 2.2vh
 		line-height: 3.3vh
 	&-home
 		margin-top: 16.5vh
 
 .go-to-bio
-	margin-top: 16.4vh
-	position: relative
-	right: -28.5vw
-	
+	margin:
+		top: 16.4vh
+		right: 56px
+	align-self: flex-end
 
 .bio__willa-circle
-	max-width: 33vh
+	max-width: 16vw
 	position: absolute
-	top: -16.5vh
+	top: -8vw
 	left: 50%
 	transform: translateX(-50%)
 	bottom: -16.5vh
@@ -76,16 +85,11 @@
 // __ Brand Section __
 
 .brands
-	&__box
-		display: flex
-		width: 100%
-		justify-content: space-between
-		margin:
-			top: 21vh
-			bottom: 14vh
+	margin:
+		top: 21vh
+		bottom: 14vh
 	&__img
 		max-width: 13vw
-
 
 // __ Latest Media Section __
 
@@ -96,14 +100,12 @@
 		margin-bottom: 6.6vh
 
 .go-to-media
-	position: relative
-	left: 19.2vh
-	transform: translateX(-50%)
-	top: 27vh
+	margin-top: 27vh
+	align-self: center
 
 .media
 	&__img
-		max-width: 66vh
+		max-width: 100%
 	&__title--left
 		margin: 
 			top: 4.1vh
@@ -122,4 +124,134 @@
 
 .media__video
 	margin-top: 11vh
+	
+.media__box--right
+	display: flex
+	flex-direction: column
 
+@media screen and (max-width: 1100px)
+
+	.welcome
+		padding-top: 3vh
+		&__img
+			max-width: 77%
+			&::after
+				right: 0
+
+	.bio
+		height: 100%
+		&__bg
+			height: 100%
+		&-home
+			margin-top: 8vh
+		&__box
+			padding:
+				left: 15px
+				bottom: 114px
+			margin-top: 14vh
+		&__text
+			font-size: 1.6vh
+
+	.home__video-item
+		width: 100%
+		height: 30vh
+
+	.brands
+		margin: 42px 0
+
+	.latest-media
+		margin-bottom: 20vh
+
+	.latest-media__title--blue
+		margin-bottom: 31px
+
+	.go-to-media
+		margin-top: 10vh
+
+	.footer__willa-circle
+		margin: 0 42px
+		max-width: 18vh
+
+	.footer__text,
+	.link__footer
+		font-size: 10px
+		line-height: 25px
+
+
+@media screen and (max-width: 767px)
+
+	// __ Welcome Section __
+
+	.welcome
+		padding-top: 42px
+		&__img
+			max-width: 70vw
+		&__image
+			&::after
+				width: 55vw
+				height: 55vw
+				right: 0
+
+	.title.welcome__title
+		margin:
+			top: 32px
+			bottom: 29px
+		font-size: 20px
+		letter-spacing: 1.8px
+		line-height: 27px
+		max-width: 100%
+
+	// __ Bio Section __
+
+	.bio
+		height: unset
+		&-home
+			margin-top: 87px
+		&__bg
+			width: 100%
+			height: 399px
+			position: relative
+			background-position: center
+		&__box
+			padding-left: 0
+			margin-top: 31px
+		&__title
+			margin-bottom: 31px
+			font-size: 10px
+			line-height: 16px
+			letter-spacing: 4.1px
+		&__text
+			font-size: 14px
+			line-height: 21px
+			letter-spacing: 0
+
+	.bio__willa-circle
+		max-width: 121px
+		top: -60px
+
+	// __ Brand Section __
+
+	.brands
+		margin:
+			top: 92px
+			bottom: 60px
+		&__img
+			max-width: 100%
+		.col-6:first-child
+			margin-bottom: 40px
+
+	// __ Latest Media Section __
+	
+	.latest-media
+		margin-bottom: 83px
+
+	.latest-media__title--blue
+		text-align: left
+		margin-bottom: 31px
+
+	.media__video
+		margin-top: 31px
+
+	.home__video-item
+		width: 100%
+		height: 409px

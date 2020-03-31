@@ -1,5 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+	const menuBtn = document.querySelector('.mobile-menu__btn')
+	const menuListMob = document.querySelector('.menu__list-mobile')
+	let menuOpen = false
+	menuBtn.addEventListener('click', () => {
+		if(!menuOpen){
+			menuListMob.classList.add('menu__list-mobile--open')
+			document.body.style='overflow:hidden'
+			menuBtn.innerHTML = 'Close'
+			menuOpen = true
+		} else {
+			menuListMob.classList.remove('menu__list-mobile--open')
+			document.body.style='overflow:auto'
+			menuBtn.innerHTML = 'Menu'
+			menuOpen = false
+		}
+	})
+
+	const menuLinkMobOpen = document.querySelector('.menu__link-mobile--open')
+	const subMenuListMob = document.querySelector('.servises__sub-mobile')
+	let menuMobOpen = false
+	menuLinkMobOpen.addEventListener('click', () => {
+		if(!menuMobOpen){
+			subMenuListMob.classList.add('servises__sub-mobile--open')
+			menuLinkMobOpen.style='color:#4857DF'
+			menuMobOpen = true
+		} else {
+			subMenuListMob.classList.remove('servises__sub-mobile--open')
+			menuLinkMobOpen.style='color:#222'
+			menuMobOpen = false
+		}
+	})
+
+
 	const circle = document.querySelectorAll(".svg-circle");
 	circle.forEach( (el) => {
 		window.addEventListener('scroll', function() {
@@ -7,8 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 	})
 
-	let consultancySlider = document.querySelector('.consultancy__slider')
-	if(consultancySlider){
+
+	const consultancySlider = document.querySelector('.consultancy__slider')
+	const speakingSlider = document.querySelector('.speaking__slider')
+	const workshopsSlider = document.querySelector('.workshops__slider')
+	if(consultancySlider || speakingSlider || workshopsSlider){
 		var swiper = new Swiper('.swiper-container', {
 			loop: true,
 			pagination: {
@@ -20,33 +56,16 @@ document.addEventListener("DOMContentLoaded", function() {
 			},
 		});
 	}
-	
+
 	const bioHeader = document.querySelector('.bio__header')
 	const widthContainer = document.querySelector('.container').clientWidth
-	bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
+	if(document.body.clientWidth >= 768){
+		bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
+	} else {
+		bioHeader.style=`font-size: ${widthContainer / 8.1875}px; line-height: ${widthContainer / 9.3}px`;
+	}
 	
 
 
-
-	// const menuLink = document.querySelectorAll('.menu__link')
-	// menuLink.classList.remove('menu__link--active')
-	// const path = location.pathname
-	// menuLink.forEach( function() {
-	// 	const href = this.attr('href')
-	// 	if(path.slice(1).substring(0, href.length) === href){
-	// 		menuLink.classList.add('menu__link--active')
-	// 	}
-	// })
-
-	// const menuLink = document.querySelectorAll('.menu__link')
-	// menuLink.forEach( (el) => {
-	// 	menuLink.addEventListener('click', () => {
-	// 		el.classList.add('menu__link--active')
-	// 	})
-	// })
-
-	// const podcastTitle = document.querySelector('.podcast__title')
-	// const podcastTitleItem = podcastTitle.firstElementChild
-	// podcastTitleItem.innerHTML = `${podcastTitleItem.innerHTML} +`
-
 });
+

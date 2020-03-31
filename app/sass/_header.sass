@@ -1,8 +1,5 @@
-.header
-	height: 10vh
-
 .logo-img
-	height: 10vh
+	max-height: 10vh
 
 .menu
 	height: 100%
@@ -10,12 +7,13 @@
 	align-items: center
 	&__list
 		display: flex
-		justify-content: space-between
+		justify-content: flex-end
 		width: 100%
 	&__link
+		padding: 0 12px
 		position: relative
 		color: $textcolor
-		font-size: .9vw
+		font-size: 1.8vh
 		font-family: poppinslight
 		white-space: nowrap
 		&:hover
@@ -51,3 +49,112 @@
 	&:hover:after
 		width: 2vw
 
+.mobile-menu__btn
+	font-size: 16px
+	font-family: poppinslight
+	cursor: pointer
+
+@media screen and (max-width: 1100px)
+
+	.logo-img
+		max-width: 80%
+
+	.menu
+		&__link
+			padding: 0 8px
+			font-size: 1.4vh
+
+@media screen and (min-width: 768px)
+	.mobile-menu
+		display: none
+
+@media screen and (max-width: 767px)
+
+	.header
+		padding-top: 42px
+		position: relative
+		z-index: 9999
+		.col-8
+			z-index: 99999
+
+	.logo-img
+		max-width: 50vw
+
+	.menu
+		display: none
+		
+	.mobile-menu__btn
+		display: block
+		position: absolute
+		margin-top: 21px
+		right: 15px
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 52
+
+	.menu__list-mobile
+		background: $lightcolor
+		position: absolute
+		top: 0
+		left: 0
+		height: 100vh
+		width: 100%
+		z-index: 51
+		padding-left: 15px
+		display: flex
+		justify-content: center
+		flex-direction: column
+		visibility: hidden
+		transition: 0.3s
+		opacity: 0
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			// left: -50%
+			transform: translate(-50%, -50%)
+			width: 416px
+			height: 416px
+			background: $accent
+			border-radius: 100%
+			z-index: -1
+
+	.menu__list-mobile--open
+		visibility: visible
+		opacity: 1
+
+	.menu__link-mobile
+		font-family: condor
+		font-weight: 700
+		font-size: 20px
+		line-height: 27px
+		letter-spacing: 1.8px
+		text-transform: uppercase
+	
+	.menu__list-item-mobile
+		margin: 3vh 0
+
+	.servises__sub-mobile
+		padding-left: 73px
+		visibility: hidden
+		opacity: 0
+		height: 0
+		transition: 0.3s
+
+	.servises__sub-mobile--open
+		visibility: visible
+		opacity: 1
+		height: 100%
+
+	.submenu__item-services-mobile
+		margin-bottom: 18px
+		&:last-child
+			margin-bottom: 0
+
+	.submenu__link-mobile
+		font-size: 10px
+		color: $bluecolor
+		line-height: 16px
+		letter-spacing: 4.1px
+		text-transform: uppercase
+		font-family: poppinssemibold

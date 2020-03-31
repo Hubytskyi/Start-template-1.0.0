@@ -56,8 +56,8 @@
 		position: absolute
 		content: ''
 		background: $bluecolor
-		width: 40vh
-		height: 40vh
+		width: 20vw
+		height: 20vw
 		left: 50%
 		top: 50%
 		transform: translate(-50%, -50%)
@@ -78,3 +78,54 @@
 .media-item__gallery--one
 	width: 100%
 	padding: 0 15px
+
+@media screen and (max-width: 767px)
+	.media__featured--top
+		left: 38px
+		font-size: 10px
+		line-height: 16px
+		letter-spacing: 4.1px
+		top: 9px
+		&::after
+			width: 69px
+			height: 69px
+			left: 12px
+
+	.media__block--odd
+		margin-top: 40px
+
+	.media__block--even
+		margin-bottom: 9vh
+	
+	.media__block--right-odd
+		margin: 0
+
+	.media__block-inner-img
+		width: 100%
+		height: 62vh
+		object-fit: cover
+		// object-position: right
+
+	.media__featured
+		margin-bottom: 0
+
+	.media__featured-img
+		height: 37.5vh
+
+	.media__block--right-even
+		margin-top: 31px
+
+	.media__block--left-even
+		margin:
+			top: 16px
+			bottom: 16px
+
+	.media__block--right-odd,
+	.media__block--left-odd,
+	.media__block--right-even,
+		margin: 
+			top: 16px
+			bottom: 16px
+
+	.swiper-button-next
+		outline: none

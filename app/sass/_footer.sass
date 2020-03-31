@@ -31,27 +31,33 @@
 	max-width: 21vh
 	margin: 0 4.2vh
 
-// 	.footer__row
-// 		display: flex
-// 		align-items: center
-// 		letter-spacing: .75vh
-// 		color: $bluecolor
-// 		font-size: 1.5vh
-// 		font-weight: 600
-// 		margin-bottom: 13vh
-// 		justify-content: center
-// 		.footer__left-block
-// 			text-align: right
-// 		.circle
-// 			width: 22.7vh
-// 			textPath
-// 				letter-spacing: 0
-// 	a
-// 		color: $bluecolor
-// 		&:hover
-// 			color: inherit
-			
-// .footer__left-block span:first-child,
-// .footer__right-block a:first-child
-// 	display: block
-// 	margin-bottom: 3.4vh
+@media screen and (max-width: 767px)
+	.footer
+		margin-bottom: 34px
+
+	.footer__box
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding: 0 15px
+	
+	.footer__willa-circle
+		margin: 0 0 9px 0
+		width: 70px
+		height: 70px
+
+	.footer__box--left
+		text-align: left
+		order: 1
+
+	.footer__box--right
+		order: 2
+
+	.footer__text,
+	.link__footer
+		font-size: 10px
+		letter-spacing: 4px
+
+	.footer__text,
+	.link__footer:first-child
+		margin-bottom: 9px
