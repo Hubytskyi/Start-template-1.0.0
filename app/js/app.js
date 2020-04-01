@@ -1,21 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+
+	const menuList = document.querySelector('.menu__list')
 	const menuBtn = document.querySelector('.mobile-menu__btn')
 	const menuListMob = document.querySelector('.menu__list')
+	const menuListItem = document.querySelectorAll('.menu__list-item')
 	let menuOpen = false
 	menuBtn.addEventListener('click', () => {
+
 		if(!menuOpen){
 			menuListMob.classList.add('menu__list-mobile--open')
 			document.body.style='overflow:hidden'
 			menuBtn.innerHTML = 'Close'
+			// Start menu items animation
+			let count = 0
+			for(let i = 0; i < menuList.children.length; i++){
+				count += 200
+				menuList.children[i].style.animation=`menuItemAnim 500ms ease-out ${count}ms forwards`
+			}
+			// End menu items animation
 			menuOpen = true
 		} else {
 			menuListMob.classList.remove('menu__list-mobile--open')
 			document.body.style='overflow:auto'
 			menuBtn.innerHTML = 'Menu'
+
+			menuListItem.forEach( (menuListItem) => {
+				menuListItem.style.animation='none'
+			})
+
 			menuOpen = false
 		}
 	})
+
 
 	const menuLinkMobOpen = document.querySelector('.menu__list--submenu')
 	const subMenuListMob = document.querySelector('.submenu__list-services')
