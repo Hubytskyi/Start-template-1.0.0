@@ -101,8 +101,8 @@
 
 .consultancy__block--right-odd
 	margin:
-		top: 11vh
-		left: 7vh
+		top: 5vw
+		left: 3.4vw
 		bottom: 5vw
 
 .consultancy__block--even
@@ -126,7 +126,19 @@
 	margin-top: 1.3vw
 	letter-spacing: .15vw
 
+@media screen and (max-width: 1100px)
+
+	.consultancy__block--right-odd
+		.consultancy__block-inner-img
+			width: 100%
+			max-height: 30vw
+			object-fit: cover
+
 @media screen and (max-width: 767px)
+
+	.consultancy__block--right-odd
+		.consultancy__block-inner-img
+			max-height: 100%
 
 	.consultancy__block-inner-img
 		width: 100%
