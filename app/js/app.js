@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	const menuBtn = document.querySelector('.mobile-menu__btn')
-	const menuListMob = document.querySelector('.menu__list-mobile')
+	const menuListMob = document.querySelector('.menu__list')
 	let menuOpen = false
 	menuBtn.addEventListener('click', () => {
 		if(!menuOpen){
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	})
 
-	const menuLinkMobOpen = document.querySelector('.menu__link-mobile--open')
-	const subMenuListMob = document.querySelector('.servises__sub-mobile')
+	const menuLinkMobOpen = document.querySelector('.menu__list--submenu')
+	const subMenuListMob = document.querySelector('.submenu__list-services')
 	let menuMobOpen = false
 	menuLinkMobOpen.addEventListener('click', () => {
 		if(!menuMobOpen){
@@ -31,6 +31,17 @@ document.addEventListener("DOMContentLoaded", function() {
 			menuMobOpen = false
 		}
 	})
+
+	const menuLink = document.querySelectorAll('.menu__link')
+	if(document.body.clientWidth < 768){
+		menuLink.forEach( (el) => {
+			el.classList.remove('item__skew--hover')
+		})
+	} else {
+		menuLink.forEach( (el) => {
+			el.classList.add('item__skew--hover')
+		})
+	}
 
 
 	const circle = document.querySelectorAll(".svg-circle");

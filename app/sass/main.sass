@@ -34,15 +34,15 @@
 .title
 	font-family: condor
 	font-weight: 700
-	font-size: 3.2vh
-	line-height: 3.9vh
-	letter-spacing: 0.3vh
+	font-size: 1.6vw
+	line-height: 1.9vw
+	letter-spacing: .15vw
 	text-transform: uppercase
 
 .link-stretch
 	letter-spacing: 5px
 	color: $bluecolor
-	font-size: 1.6vh
+	font-size: .82vw
 	text-transform: uppercase
 	opacity: .5
 	transition: 0.3s
@@ -54,12 +54,13 @@
 .title--blue
 	color: $bluecolor
 	letter-spacing: 7px
-	font-size: 2vh
+	font-size: 1vw
 	text-transform: uppercase
 	font-family: poppinssemibold
 
 .go-to__box
 	display: inline-block
+	position: relative
 
 .link__circle
 	font-family: poppinsmedium
@@ -103,7 +104,7 @@
 		transform: skewY(-45deg)
 		transform-origin: left top
 	&:hover:after
-		width: 5vw
+		width: 10vh
 
 .svg-circle
 	transition: 1s ease-out
@@ -111,32 +112,27 @@
 
 .title__left-block--odd
 	margin: 
-		top: 4.3vh
-		bottom: 5.2vh
+		top: 2.05vw
+		bottom: 2.6vw
 
 .title__right-block--odd
-	max-width: 64vh
+	max-width: 30vw
 	margin: 
-		top: 4.3vh
-		bottom: 3.3vh
+		top: 2vw
+		bottom: 1.6vw
 
 .title__right-block--even
-	max-width: 66vh
+	max-width: 33vw
 	margin: 
-		top: 8vh
-		bottom: 5vh
+		top: 3.9vw
+		bottom: 2.4vw
 
 .title__left-block--even
 	margin: 
-		top: 4.3vh
-		bottom: 3.5vh
+		top: 2vw
+		bottom: 1.7vw
 
 @media screen and (max-width: 1100px)
-
-	.title
-		font-size: 24px
-		line-height: 30px
-		letter-spacing: 1.8px
 
 	.link-stretch
 		font-size: 12px
@@ -203,6 +199,7 @@
 	.title__right-block--odd,
 	.title__left-block--odd,
 	.title__right-block--even,
+		max-width: 100%
 		margin: 
 			top: 28px
 			bottom: 28px
