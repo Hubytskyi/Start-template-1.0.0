@@ -33,13 +33,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	})
 
 	const menuLink = document.querySelectorAll('.menu__link')
+	const goToBox = document.querySelectorAll('.go-to__box')
 	if(document.body.clientWidth < 768){
-		menuLink.forEach( (el) => {
-			el.classList.remove('item__skew--hover')
+		menuLink.forEach( (menuLink) => {
+			menuLink.classList.remove('item__skew--hover')
+		})
+		goToBox.forEach( (goToBox) => {
+			goToBox.classList.remove('item__skew--hover')
 		})
 	} else {
-		menuLink.forEach( (el) => {
-			el.classList.add('item__skew--hover')
+		menuLink.forEach( (menuLink) => {
+			menuLink.classList.add('item__skew--hover')
+		})
+		goToBox.forEach( (goToBox) => {
+			goToBox.classList.add('item__skew--hover')
 		})
 	}
 
