@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			let count = 0
 			for(let i = 0; i < menuList.children.length; i++){
 				count += 200
-				menuList.children[i].style.animation=`menuItemAnim 500ms ease-out ${count}ms forwards`
+				menuList.children[i].style.animation=`menuItemAnim 700ms ease-out ${count}ms forwards`
 			}
 			// End menu items animation
 
