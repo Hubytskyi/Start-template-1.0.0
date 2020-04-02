@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+	AOS.init()
+
 	const menuList = document.querySelector('.menu__list')
 	const menuBtn = document.querySelector('.mobile-menu__btn')
 	const menuListItem = document.querySelectorAll('.menu__list-item')
