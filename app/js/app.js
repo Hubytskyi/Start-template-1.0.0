@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			let count = 0
 			for(let i = 0; i < menuList.children.length; i++){
 				count += 200
-				menuList.children[i].style.animation=`menuItemAnim 700ms ease-out ${count}ms forwards`
+				menuList.children[i].style.animation=`menuItemAnim 500ms ease-out ${count}ms forwards`
 			}
 			// End menu items animation
 
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		})
 	}
 
-	// Willa circle animation
+	// __ Willa circle animation __
 	const circle = document.querySelectorAll(".svg-circle");
 	circle.forEach( (el) => {
 		window.addEventListener('scroll', function() {
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 	})
 
-	// Slider
+	// __ Slider __
 	const consultancySlider = document.querySelector('.consultancy__slider')
 	const speakingSlider = document.querySelector('.speaking__slider')
 	const workshopsSlider = document.querySelector('.workshops__slider')
@@ -108,16 +108,19 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 	}
 
-	// Title size for About Page
+	// __ Title size for About Page __
 	const bioHeader = document.querySelector('.bio__header')
 	const widthContainer = document.querySelector('.container').clientWidth
-	if(document.body.clientWidth >= 768){
-		bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
-	} else if (document.body.clientWidth <= 414){
-		bioHeader.style=`font-size: ${widthContainer / 8.4}px; line-height: ${widthContainer / 9.5}px`;
-	} else {
-		bioHeader.style=`font-size: ${widthContainer / 8}px; line-height: ${widthContainer / 9.3}px`;
+	if(bioHeader){
+		if(document.body.clientWidth >= 768){
+			bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
+		} else if (document.body.clientWidth <= 414){
+			bioHeader.style=`font-size: ${widthContainer / 8.4}px; line-height: ${widthContainer / 9.5}px`;
+		} else {
+			bioHeader.style=`font-size: ${widthContainer / 8}px; line-height: ${widthContainer / 9.3}px`;
+		}
 	}
+
 	
 
 });
