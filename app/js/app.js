@@ -2,16 +2,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	const menuList = document.querySelector('.menu__list')
 	const menuBtn = document.querySelector('.mobile-menu__btn')
-	const menuListMob = document.querySelector('.menu__list')
 	const menuListItem = document.querySelectorAll('.menu__list-item')
-	const menuLinkMobOpen = document.querySelector('.menu__list--submenu')
-	const subMenuListMob = document.querySelector('.submenu__list-services')
+	const menuLinkMobOpen = document.querySelectorAll('.menu__list--submenu')
+	const subMenuListMob = document.querySelectorAll('.submenu__list')
 
 	// __ Start Menu work and animation __
 	let menuOpen = false
 	menuBtn.addEventListener('click', () => {
-		if(!menuOpen){
-			menuListMob.classList.add('menu__list-mobile--open')
+		if(!menuOpen){ // When we click 'Menu' button
+			menuList.classList.add('menu__list-mobile--open')
 			document.body.style='overflow:hidden'
 			menuBtn.innerHTML = 'Close'
 
@@ -19,31 +18,33 @@ document.addEventListener("DOMContentLoaded", function() {
 			let count = 0
 			for(let i = 0; i < menuList.children.length; i++){
 				count += 200
-				menuList.children[i].style.animation=`menuItemAnim 500ms ease-out ${count}ms forwards`
+				menuList.children[i].style.animation=`menuItemAnim 300ms ease-out ${count}ms forwards`
 			}
 			// End menu items animation
 
-			// Start submenu
+			// Start submenu open
 			let menuMobOpen = false
-			menuLinkMobOpen.addEventListener('click', () => {
-				if(!menuMobOpen){
-					subMenuListMob.classList.add('servises__sub-mobile--open')
-					menuLinkMobOpen.style='color:#4857DF; opacity:1'
-					menuList.lastElementChild.style='padding-bottom:20vh; opacity:1'
-					menuMobOpen = true
-				} else {
-					subMenuListMob.classList.remove('servises__sub-mobile--open')
-					menuLinkMobOpen.style='color:#222; opacity:1'
-					menuList.lastElementChild.style='padding-bottom:0; opacity:1'
-					menuMobOpen = false
-				}
+			menuLinkMobOpen.forEach( (el) => {
+				el.addEventListener('click', () => {
+					if(!menuMobOpen){
+						el.lastElementChild.classList.add('sub-mobile--open')
+						el.style='color:#4857DF; opacity:1'
+						menuList.lastElementChild.style='padding-bottom:20vh; opacity:1'
+						menuMobOpen = true
+					} else {
+						el.lastElementChild.classList.remove('sub-mobile--open')
+						el.style='color:#222; opacity:1'
+						menuList.lastElementChild.style='padding-bottom:0; opacity:1'
+						menuMobOpen = false
+					}
+				})
 			})
-			// End submenu
+			// End submenu open
 
 			menuOpen = true
 
-		} else {
-			menuListMob.classList.remove('menu__list-mobile--open')
+		} else { // When we click 'close' button
+			menuList.classList.remove('menu__list-mobile--open')
 			document.body.style='overflow:auto'
 			menuBtn.innerHTML = 'Menu'
 
@@ -54,13 +55,23 @@ document.addEventListener("DOMContentLoaded", function() {
 			// End menu items animation reset
 
 			// Start submenu reset
-			menuLinkMobOpen.style='opacity:0'
-			subMenuListMob.classList.remove('servises__sub-mobile--open')
+			menuLinkMobOpen.forEach( (menuLinkMobOpen) => {
+				menuLinkMobOpen.style='opacity:0'
+			})
+			subMenuListMob.forEach( (subMenuListMob) => {
+				subMenuListMob.classList.remove('sub-mobile--open')
+			})
 			menuList.lastElementChild.style='opacity:0'
 			// End submenu reset
 
 			menuOpen = false
 		}
+	})
+
+
+	menuListItem.forEach( (menuListItem) => {
+		if(menuListItem.classList.contains('menu__list--submenu'))
+		menuListItem.firstElementChild.removeAttribute('href')
 	})
 
 

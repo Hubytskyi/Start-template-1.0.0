@@ -10,7 +10,7 @@
 		justify-content: flex-end
 		width: 100%
 	&__link
-		padding: 0 12px
+		padding: 0 10px
 		position: relative
 		color: $textcolor
 		font-size: 1.8vh
@@ -27,7 +27,7 @@
 .menu__list-item
 	position: relative
 
-.submenu__list-services
+.submenu__list
 	position: absolute
 	opacity: 1
 	top: 3.2vh
@@ -60,7 +60,7 @@
 			padding: 0 8px
 			font-size: 1.4vh
 
-	.submenu__list-services
+	.submenu__list
 		.menu__link
 			font-size: 13px
 
@@ -69,7 +69,7 @@
 	.mobile-menu__btn
 		display: none
 
-	.menu__list--submenu:hover .submenu__list-services
+	.menu__list--submenu:hover .submenu__list
 		opacity: 1
 		visibility: visible
 
@@ -90,7 +90,7 @@
 	.menu
 		position: relative
 
-	.submenu__list-services
+	.submenu__list
 		.menu__link
 			font-size: 1.6vh
 
@@ -149,7 +149,7 @@
 	.menu__list-item
 		margin: 3vh 0
 
-	.submenu__list-services
+	.submenu__list
 		background: none
 		padding-left: 73px
 		visibility: hidden
@@ -157,16 +157,16 @@
 		height: 0
 		transition: 0.3s
 
-	.servises__sub-mobile--open
+	.sub-mobile--open
 		visibility: visible
 		opacity: 1
 		height: 100%
 		position: static
 
-	.submenu__item-services:first-child
+	.submenu__list-item:first-child
 		margin-top: 9px
 
-	.submenu__item-services
+	.submenu__list-item
 		margin-bottom: 9px
 		&:last-child
 			margin-bottom: 0
