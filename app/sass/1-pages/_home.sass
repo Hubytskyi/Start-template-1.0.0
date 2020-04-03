@@ -57,12 +57,16 @@
 	&:hover::after
 		width: 50px
 		left: 50%
-		bottom: 27%
+		bottom: 22%
 	&:hover .popup__img,
 	&:hover .podcast__popup-inner::after,
 	&:hover .link__circle.link__popup,
 	&:hover .go-to__popup-podcast,
+	&:hover .popup__bg-overlay
 		transform: scale(1.3)
+	&:hover .go-to__popup-podcast
+		top: 55%
+		left: 45%
 
 .popup__title
 	position: absolute
@@ -80,17 +84,17 @@
 
 .podcast__popup-inner
 	position: relative
-	&::after
-		content: ''
-		position: absolute
-		top: 0
-		right: 0
-		bottom: 0
-		left: 0
-		background: #4857DF 0% 0% no-repeat padding-box
-		opacity: 0.57
-		transition: 0.3s
-		transform-origin: top left
+
+.popup__bg-overlay
+	background: #4857DF 0% 0% no-repeat padding-box
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	opacity: 0.5
+	transition: 0.3s
+	transform-origin: top left
 
 .popup__img
 	max-width: 154px
@@ -98,6 +102,8 @@
 	object-fit: cover
 	transition: 0.3s
 	transform-origin: top left
+	// background: $bluecolor
+	// background-blend-mode: overlay 
 
 .go-to__popup-podcast
 	position: absolute
