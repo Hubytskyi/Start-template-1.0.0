@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	AOS.init()
-
 	const menuList = document.querySelector('.menu__list')
 	const menuBtn = document.querySelector('.mobile-menu__btn')
 	const menuListItem = document.querySelectorAll('.menu__list-item')
@@ -97,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	// __ Willa circle animation __
-	const circle = document.querySelectorAll(".svg-circle");
+	const circle = document.querySelectorAll(".willa-circle__animation");
 	circle.forEach( (el) => {
 		window.addEventListener('scroll', function() {
 			el.style = `transform:rotate(${window.pageYOffset / 2}deg)`;
@@ -126,15 +124,15 @@ document.addEventListener("DOMContentLoaded", function() {
 	const widthContainer = document.querySelector('.container').clientWidth
 	if(bioHeader){
 		if(document.body.clientWidth >= 768){
-			bioHeader.style=`font-size: ${widthContainer / 7.7}px; line-height: ${widthContainer / 9.3}px`;
+			bioHeader.style=`font-size: ${widthContainer / 7.2}px; line-height: ${widthContainer / 8.7}px`;
 		} else if (document.body.clientWidth <= 414){
-			bioHeader.style=`font-size: ${widthContainer / 8.4}px; line-height: ${widthContainer / 9.5}px`;
+			bioHeader.style=`font-size: ${widthContainer / 7.9}px; line-height: ${widthContainer / 9}px`;
 		} else {
 			bioHeader.style=`font-size: ${widthContainer / 8}px; line-height: ${widthContainer / 9.3}px`;
 		}
 	}
 
-	
+	AOS.init()
 
 });
 
