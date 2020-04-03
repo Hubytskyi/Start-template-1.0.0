@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	// __ Willa circle animation __
-	const circle = document.querySelectorAll(".willa-circle__animation");
+	const circle = document.querySelectorAll(".svg-circle");
 	circle.forEach( (el) => {
 		window.addEventListener('scroll', function() {
 			el.style = `transform:rotate(${window.pageYOffset / 2}deg)`;
