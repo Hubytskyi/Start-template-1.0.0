@@ -126,11 +126,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		if(document.body.clientWidth >= 768){
 			bioHeader.style=`font-size: ${widthContainer / 7.2}px; line-height: ${widthContainer / 8.7}px`;
 		} else if (document.body.clientWidth <= 414){
-			bioHeader.style=`font-size: ${widthContainer / 7.9}px; line-height: ${widthContainer / 9}px`;
+			bioHeader.style=`font-size: ${widthContainer / 7.8}px; line-height: ${widthContainer / 9}px`;
 		} else {
 			bioHeader.style=`font-size: ${widthContainer / 8}px; line-height: ${widthContainer / 9.3}px`;
 		}
 	}
+
 
 	AOS.init()
 
