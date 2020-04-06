@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	const circle = document.querySelectorAll(".svg-circle");
 	circle.forEach( (el) => {
 		window.addEventListener('scroll', function() {
-			el.style = `transform:rotate(${window.pageYOffset / 2}deg)`;
+			el.style = `transform:rotate(${window.pageYOffset / 3}deg)`;
 			});
 	})
 
