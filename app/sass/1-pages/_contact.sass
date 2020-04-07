@@ -35,19 +35,35 @@
 		top: 3.2vw
 		bottom: 0
 
+.contacts__hello-block
+	display: flex
+	justify-content: center
+
 .contacts__hello
 	font-family: condor
 	font-size: 10vw
 	font-weight: 700
-	text-align: center
+	// text-align: center
 	color: $accent
 	letter-spacing: .5vw
 	line-height: 100%
-	margin-top: 5vw
+	// margin-top: 5vw
+	position: relative
+	top: 5vw
+	display: inline
+	&::before
+		content: ''
+		background: $bluecolor
+		width: 2vw
+		height: 2vw
+		position: absolute
+		bottom: 18%
+		right: -2vw
+		border-radius: 100%
 
-.contacts__hello--dot
-	font-size: 10vw
-	color: $bluecolor
+// .contacts__hello--dot
+// 	font-size: 10vw
+// 	color: $bluecolor
 
 @media screen and (max-width: 1100px)
 	.contacts__block
